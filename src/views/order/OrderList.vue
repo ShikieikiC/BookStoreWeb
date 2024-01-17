@@ -53,7 +53,7 @@
 			</el-table>
 		</el-col>
 		<el-col>
-			<PaginationVue
+			<Pagination
 				ref="page"
 				@handleCurrentChange="queryOrder($refs.page.pageNum)"
 				@handleSizeChange="queryOrder($refs.page.pageNum)" />
@@ -62,7 +62,7 @@
 </template>
 
 <script>
-import PaginationVue from "@/components/Pagination.vue";
+import Pagination from "@/components/Pagination.vue";
 import Rate from "@/components/Rate.vue";
 
 export default {
@@ -83,7 +83,7 @@ export default {
 		};
 	},
 	components: {
-		PaginationVue,
+		Pagination,
 		Rate
 	},
 	methods: {

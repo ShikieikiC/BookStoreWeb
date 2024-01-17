@@ -44,7 +44,7 @@
 			</el-table>
 		</el-col>
 		<el-col>
-			<PaginationVue
+			<Pagination
 				ref="page"
 				@handleCurrentChange="queryFood($refs.page.pageNum)"
 				@handleSizeChange="queryFood($refs.page.pageNum)" />
@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import PaginationVue from "@/components/Pagination.vue";
+import Pagination from "@/components/Pagination.vue";
 import InputNumber from "@/components/InputNumber.vue";
 
 export default {
@@ -79,7 +79,7 @@ export default {
 		};
 	},
 	components: {
-		PaginationVue,
+		Pagination,
 		InputNumber
 	},
 	methods: {

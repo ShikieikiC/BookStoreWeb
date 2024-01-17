@@ -75,7 +75,7 @@
 			</el-table>
 		</el-col>
 		<el-col>
-			<PaginationVue
+			<Pagination
 				ref="page"
 				@handleCurrentChange="queryItem($refs.page.pageNum)"
 				@handleSizeChange="queryItem($refs.page.pageNum)" />
@@ -84,7 +84,7 @@
 </template>
 
 <script>
-import PaginationVue from "@/components/Pagination.vue";
+import Pagination from "@/components/Pagination.vue";
 
 export default {
 	data() {
@@ -99,7 +99,7 @@ export default {
 			selectedIds: []
 		};
 	},
-	components: { PaginationVue },
+	components: { Pagination },
 	methods: {
 		deleteBatch() {
 			this.axios.post("api/item/deleteBatch", this.selectedIds).then(() => {

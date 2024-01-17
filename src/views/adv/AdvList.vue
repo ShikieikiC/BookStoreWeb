@@ -97,7 +97,7 @@
 			</el-table>
 		</el-col>
 		<el-col>
-			<PaginationVue
+			<Pagination
 				ref="page"
 				@handleCurrentChange="queryAdv($refs.page.pageNum)"
 				@handleSizeChange="queryAdv($refs.page.pageNum)" />
@@ -106,7 +106,7 @@
 </template>
 
 <script>
-import PaginationVue from "@/components/Pagination.vue";
+import Pagination from "@/components/Pagination.vue";
 
 export default {
 	data() {
@@ -123,7 +123,7 @@ export default {
 			selectedIds: []
 		};
 	},
-	components: { PaginationVue },
+	components: { Pagination },
 	methods: {
 		changeStatus(id) {
 			this.axios.get("api/adv/changeStatus?id=" + id).then(() => {
