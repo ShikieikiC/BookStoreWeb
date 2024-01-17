@@ -31,6 +31,11 @@ import UpdateAdv from "../views/adv/UpdateAdv.vue";
 import KillBook from "../views/killBook/KillBookIndex.vue";
 import KillBookList from "../views/killBook/KillBookList.vue";
 import KillBookInfo from "../views/killBook/KillBookInfo.vue";
+import KillBookPay from "../views/killBook/KillBookPay.vue";
+
+import Food from "../views/food/FoodIndex.vue";
+import FoodList from "../views/food/FoodList.vue";
+import FoodPay from "../views/food/FoodPay.vue";
 
 Vue.use(VueRouter);
 
@@ -144,6 +149,24 @@ const routes = [
 					{
 						path: "/killBookInfo",
 						component: KillBookInfo
+					},
+					{
+						path: "/killBookPay",
+						component: KillBookPay
+					}
+				]
+			},
+			{
+				path: "/food",
+				component: Food,
+				children: [
+					{
+						path: "/",
+						component: FoodList
+					},
+					{
+						path: "/foodPay",
+						component: FoodPay
 					}
 				]
 			}

@@ -26,7 +26,9 @@
 			<el-table :data="orders" stripe style="width: 100%">
 				<el-table-column prop="orderNum" label="订单编号">
 					<template slot-scope="scope">
-						<span v-if="scope.row.status == 5">{{ scope.row.orderNum }}</span>
+						<span v-if="scope.row.status == 5 || scope.row.status == 4">
+							{{ scope.row.orderNum }}
+						</span>
 						<el-link type="primary" @click="goToInfo(scope.row)" v-else>
 							{{ scope.row.orderNum }}
 						</el-link>

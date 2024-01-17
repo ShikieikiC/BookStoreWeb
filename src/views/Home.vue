@@ -6,19 +6,12 @@
 					<div class="grid-content bg-purple">
 						<el-menu default-active="1" mode="horizontal" router>
 							<el-menu-item index="/">首页</el-menu-item>
-							<el-submenu index="2">
-								<template slot="title">图书类型</template>
-								<el-menu-item index="2-1">科幻</el-menu-item>
-								<el-menu-item index="2-2">武侠</el-menu-item>
-								<el-menu-item index="2-3">历史</el-menu-item>
-								<el-menu-item index="2-4">言情</el-menu-item>
-								<el-menu-item index="2-5">推理</el-menu-item>
-							</el-submenu>
 							<el-menu-item index="/killBook">秒杀图书</el-menu-item>
 							<el-menu-item index="/shoppingCart">购物车</el-menu-item>
 							<el-menu-item index="/order">我的订单</el-menu-item>
 							<el-menu-item index="/item">商品管理</el-menu-item>
 							<el-menu-item index="/adv">广告管理</el-menu-item>
+							<el-menu-item index="/food">外卖管理</el-menu-item>
 						</el-menu>
 					</div>
 				</el-col>
