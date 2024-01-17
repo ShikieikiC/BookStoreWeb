@@ -17,11 +17,12 @@ export default {
 	methods: {
 		handleSizeChange(pageSize) {
 			this.pageSize = pageSize;
-			this.$emit("handleSizeChange", pageSize);
+			this.pageNum = 1;
+			this.$emit("handleSizeChange");
 		},
 		handleCurrentChange(pageNum) {
 			this.pageNum = pageNum;
-			this.$emit("handleCurrentChange", pageNum);
+			this.$emit("handleCurrentChange");
 		}
 	},
 	data() {
